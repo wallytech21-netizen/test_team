@@ -201,5 +201,204 @@ public class Proyecto{
             System.out.println(i);
         }
     } //fin del main
+public static void iningresos(){
+        contador=1;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+        icopia=i;
+        System.out.println("  ____  _                           _     _               _                       _       _             _        _____                                     \n" +
+                " |  _ \\(_)                         (_)   | |             | |                     | |     | |           | |      |_   _|                                    \n" +
+                " | |_) |_  ___ _ ____   _____ _ __  _  __| | ___     __ _| |  _ __ ___   ___   __| |_   _| | ___     __| | ___    | |  _ __   __ _ _ __ ___  ___  ___  ___ \n" +
+                " |  _ <| |/ _ \\ '_ \\ \\ / / _ \\ '_ \\| |/ _` |/ _ \\   / _` | | | '_ ` _ \\ / _ \\ / _` | | | | |/ _ \\   / _` |/ _ \\   | | | '_ \\ / _` | '__/ _ \\/ __|/ _ \\/ __|\n" +
+                " | |_) | |  __/ | | \\ V /  __/ | | | | (_| | (_) | | (_| | | | | | | | | (_) | (_| | |_| | | (_) | | (_| |  __/  _| |_| | | | (_| | | |  __/\\__ \\ (_) \\__ \\\n" +
+                " |____/|_|\\___|_| |_|\\_/ \\___|_| |_|_|\\__,_|\\___/   \\__,_|_| |_| |_| |_|\\___/ \\__,_|\\__,_|_|\\___/   \\__,_|\\___| |_____|_| |_|\\__, |_|  \\___||___/\\___/|___/\n" +
+                "                                                                                                                              __/ |                        \n" +
+                "                                                                                                                             |___/                         ");
+        System.out.println("Ingresa los siguientes datos en valores enteros, tomando en cuenta las siguientes instrucciones.");
+        System.out.println("-El día no puede ser mayor a 31 días con respecto al mes de ingreso.");
+        System.out.println("-El mes no debe de ser menor a 1 ni mayor a 12");
+        System.out.println("-Montos no negativos.");
+        System.out.println("Nota: Te recordamos que cada vez que ingresas datos en este modulo, tu modulo de resumen cambia e inicia desde el primer nuevo dato ingresado hasta el último.");
+        System.out.println("Considerando esto, dame la cantidad de ingresos que ingresarás:");
+        x=sc.nextInt();
+        x+=icopia;
+        while(i<x) {
+            System.out.println("Ingreso No."+contador);
+            verificacionmesin();
+            cmesdiain[i][0]=mesdiain[i][0];
+            verificaciondiain();
+            cmesdiain[i][1]=mesdiain[i][1];
+            System.out.print("Dame el concepto del ingreso: ");
+            Scanner st=new Scanner(System.in);
+            conceptoin[i] = st.nextLine();
+            System.out.print("Dame el monto del ingreso: ");
+            ingresos[i] = sc.nextInt();
+            i++;
+            System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+            contador++;
+        }
+    }
+    public static void inegresos(){
+        contador=1;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+        jcopia=j;
+        System.out.println("  ____  _                           _     _               _                       _       _             _        ______                              \n" +
+                " |  _ \\(_)                         (_)   | |             | |                     | |     | |           | |      |  ____|                             \n" +
+                " | |_) |_  ___ _ ____   _____ _ __  _  __| | ___     __ _| |  _ __ ___   ___   __| |_   _| | ___     __| | ___  | |__   __ _ _ __ ___  ___  ___  ___ \n" +
+                " |  _ <| |/ _ \\ '_ \\ \\ / / _ \\ '_ \\| |/ _` |/ _ \\   / _` | | | '_ ` _ \\ / _ \\ / _` | | | | |/ _ \\   / _` |/ _ \\ |  __| / _` | '__/ _ \\/ __|/ _ \\/ __|\n" +
+                " | |_) | |  __/ | | \\ V /  __/ | | | | (_| | (_) | | (_| | | | | | | | | (_) | (_| | |_| | | (_) | | (_| |  __/ | |___| (_| | | |  __/\\__ \\ (_) \\__ \\\n" +
+                " |____/|_|\\___|_| |_|\\_/ \\___|_| |_|_|\\__,_|\\___/   \\__,_|_| |_| |_| |_|\\___/ \\__,_|\\__,_|_|\\___/   \\__,_|\\___| |______\\__, |_|  \\___||___/\\___/|___/\n" +
+                "                                                                                                                        __/ |                        \n" +
+                "                                                                                                                       |___/                         ");
+        System.out.println("Ingresa los siguientes datos en valores enteros, tomando en cuenta las siguientes instrucciones.");
+        System.out.println("-El día no puede ser mayor a 31 días con respecto al mes de egreso.");
+        System.out.println("-El mes no debe de ser menor a 1 ni mayor a 12");
+        System.out.println("-Montos no negativos.");
+        System.out.println("Nota: Te recordamos que cada vez que egresas datos en este modulo, tu modulo de resumen cambia e inicia desde el primer nuevo dato ingresado hasta el último.");
+        System.out.println("Considerando esto, dame la cantidad de egresos que ingresarás:");
+        x=sc.nextInt();
+        x+=jcopia;
+        while(j<x) {
+            System.out.println("Ingreso No."+contador);
+            verificacionmeseg();
+            cmesdiaeg[j][0]=mesdiaeg[j][0];
+            verificaciondiaeg();
+            cmesdiaeg[j][1]=mesdiaeg[j][1];
+            System.out.print("Dame el concepto del ingreso: ");
+            Scanner st=new Scanner(System.in);
+            conceptoeg[j]=st.nextLine();
+            System.out.print("Dame el monto del ingreso: ");
+            egresos[j] = sc.nextInt();
+            System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+            j++;
+            contador++;
+        }
+public static void primerm(){
+        System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+        System.out.println("  __  __           _      _             _           _    _                            ____   ___    _______  ___    ______   ___  \n" +
+                " |  \\/  | ___   __| | ___| | ___     __| | ___     / \\  | |__   ___  _ __ _ __ ___   | ___| / _ \\  / /___ / / _ \\  / /___ \\ / _ \\ \n" +
+                " | |\\/| |/ _ \\ / _` |/ _ \\ |/ _ \\   / _` |/ _ \\   / _ \\ | '_ \\ / _ \\| '__| '__/ _ \\  |___ \\| | | |/ /  |_ \\| | | |/ /  __) | | | |\n" +
+                " | |  | | (_) | (_| |  __/ | (_) | | (_| |  __/  / ___ \\| | | | (_) | |  | | | (_) |  ___) | |_| / /  ___) | |_| / /  / __/| |_| |\n" +
+                " |_|  |_|\\___/ \\__,_|\\___|_|\\___/   \\__,_|\\___| /_/   \\_\\_| |_|\\___/|_|  |_|  \\___/  |____/ \\___/_/  |____/ \\___/_/  |_____|\\___/ \n" +
+                "                                                                                                                                  ");
+        Scanner sc=new Scanner(System.in);
+        for(int a=icopia; a<i; a++){
+            suma+=ingresos[a];
+        }
+        if(i==0) suma=0;
+        else suma/=i;
+        System.out.println("Haciendo un promedio de los datos que tenemos, tu ingreso general es, según los datos que has ingresado en el módulo de ingresos: "+suma);
+        System.out.println("Es correcto o quieres actualizarlo?     1.- Quiero cambiarlo    2.- Es correcto.");
+        op1=sc.nextInt();
+        while(op1<1 || op1>2){
+            System.out.println("Opción incorrecta, por favor ingresa una opción válida.");
+            op1=sc.nextInt();
+        }
+        if(op1==1){
+            System.out.println("Por favor selecciona tu ingreso mensual, recuerda que debe ser un número entero positivo: ");
+            suma=sc.nextInt();
+            if(suma<0){
+                System.out.println("Dato inválido, por favor ingresa un número válido.");
+                suma=sc.nextInt();
+            }
+        }
+        System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+        System.out.println("En base al ingreso mensual, hemos calculado para ti el siguiente modelo de ahorro: ");
+        System.out.println("Necesidades (%50): "+(suma*.5));
+        System.out.println("Deseos (%30): "+(suma*.3));
+        System.out.println("Ahorro/Deudas (%20): "+(suma*.2));
+        System.out.println("Has terminado de leer?, indica Si o No.");
+        respuestasi=sc.next();
+        while(!respuestasi.equalsIgnoreCase("SI")){
+            System.out.print("Indicanos cuando hayas terminado con un SI: ");
+            respuestasi=sc.next();
+        }
+    }
+    public static void segundom(){
+        System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+        System.out.println("  __  __           _      _             _           _    _                                    _                            ____  _                \n" +
+                " |  \\/  | ___   __| | ___| | ___     __| | ___     / \\  | |__   ___  _ __ _ __ ___     __ _  | |    __ _ _ __ __ _  ___   |  _ \\| | __ _ _______  \n" +
+                " | |\\/| |/ _ \\ / _` |/ _ \\ |/ _ \\   / _` |/ _ \\   / _ \\ | '_ \\ / _ \\| '__| '__/ _ \\   / _` | | |   / _` | '__/ _` |/ _ \\  | |_) | |/ _` |_  / _ \\ \n" +
+                " | |  | | (_) | (_| |  __/ | (_) | | (_| |  __/  / ___ \\| | | | (_) | |  | | | (_) | | (_| | | |__| (_| | | | (_| | (_) | |  __/| | (_| |/ / (_) |\n" +
+                " |_|  |_|\\___/ \\__,_|\\___|_|\\___/   \\__,_|\\___| /_/   \\_\\_| |_|\\___/|_|  |_|  \\___/   \\__,_| |_____\\__,_|_|  \\__, |\\___/  |_|   |_|\\__,_/___\\___/ \n" +
+                "                                                                                                             |___/                                ");
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Nota: Recuerda que este modelo de ahorro considera metas de ahorro con un plazo mayor a 5 años.");
+        System.out.println("¿Quieres continuar?, responde SI o NO.");
+        respuestasi=sc.next();
+        while(!respuestasi.equalsIgnoreCase("SI")){
+            System.out.println("Esa respuesta no es aceptada, por favor, escribe SI o NO");
+            respuestasi=sc.next();
+        }
+        if(!respuestasi.equalsIgnoreCase("NO")){
+            System.out.print("\n");
+            System.out.print("Dame el concepto de la meta que quieres crear: ");
+            Scanner st=new Scanner(System.in);
+            meta=st.nextLine();
+            for(int a=icopia; a<i; a++){
+                suma+=ingresos[a];
+            }
+            if(i==0) suma=0;
+            else suma/=i;
+            System.out.println("Haciendo un promedio de los datos que tenemos, tu ingreso general es, según los datos que has ingresado en el módulo de ingresos: "+suma);
+            System.out.println("Es correcto o quieres actualizarlo?     1.- Quiero cambiarlo    2.- Es correcto.");
+            op1=sc.nextInt();
+            while(op1<1 || op1>2){
+                System.out.println("Opción incorrecta, por favor ingresa una opción válida.");
+                op1=sc.nextInt();
+            }
+            if(op1==1){
+                System.out.print("Por favor selecciona tu ingreso mensual, recuerda que debe ser un número entero positivo: ");
+                suma=sc.nextInt();
+                if(suma<0){
+                    System.out.print("Dato inválido, por favor ingresa un número válido.");
+                    suma=sc.nextInt();
+                }
+            }
+            System.out.print("Cúal es el valor monetario de tu meta objetivo? ");
+            valorx=sc.nextInt();
+            while(valorx<=0){
+                System.out.print("Ingresa un valor mayor a 0 para tu meta objetivo: ");
+                valorx=sc.nextInt();
+            }
 
+            System.out.print("En cuantos años planeas alcanzarla? (entero positivo): ");
+            valora=sc.nextInt();
+            while(valora<5){
+                System.out.println("Recuerda que este modulo es a largo plazo! (más de 5 años). ");
+                System.out.print("Ingresa un valor en años que concuerde con esto: ");
+                valora=sc.nextInt();
+            }
+            System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+            System.out.println("  __  __           _      _             _           _    _                                    _                            ____  _                \n" +
+                    " |  \\/  | ___   __| | ___| | ___     __| | ___     / \\  | |__   ___  _ __ _ __ ___     __ _  | |    __ _ _ __ __ _  ___   |  _ \\| | __ _ _______  \n" +
+                    " | |\\/| |/ _ \\ / _` |/ _ \\ |/ _ \\   / _` |/ _ \\   / _ \\ | '_ \\ / _ \\| '__| '__/ _ \\   / _` | | |   / _` | '__/ _` |/ _ \\  | |_) | |/ _` |_  / _ \\ \n" +
+                    " | |  | | (_) | (_| |  __/ | (_) | | (_| |  __/  / ___ \\| | | | (_) | |  | | | (_) | | (_| | | |__| (_| | | | (_| | (_) | |  __/| | (_| |/ / (_) |\n" +
+                    " |_|  |_|\\___/ \\__,_|\\___|_|\\___/   \\__,_|\\___| /_/   \\_\\_| |_|\\___/|_|  |_|  \\___/   \\__,_| |_____\\__,_|_|  \\__, |\\___/  |_|   |_|\\__,_/___\\___/ \n" +
+                    "                                                                                                             |___/                                ");
+            System.out.println("ESTRATEGIA RECOMENDADA");
+            System.out.println("----------------------------------------------");
+            System.out.println("Basado en tu meta actual ("+meta+") de $ "+ valorx+ " a "+valora+ " años.");
+            System.out.println("-Aporte Mensual necesario desde ahora: "+ (double)valorx/(valora*12));
+            System.out.println("----------------------------------------------");
+            if(suma==0){
+                percentage=100;
+            }else {
+                percentage = (double)(valorx/(valora*12)*100)/(double)suma;
+            }
+            System.out.println("Tu aporte mensual representa un "+percentage+"% sobre tu sueldo mensual.");
+            if(percentage>=50){
+                System.out.println("Consideramos que, dado que supera en "+percentage+"% tu sueldo mensual, no es una meta viable.");
+            }
+
+            System.out.println("Has terminado de leer?, indica Si o No.");
+            respuestasi=sc.next();
+            while(!respuestasi.equalsIgnoreCase("SI")){
+                System.out.print("Indicanos cuando hayas terminado con un SI: ");
+                respuestasi=sc.next();
+            }
+        }
+    }//fin modulo largo plazo
+    }
 }

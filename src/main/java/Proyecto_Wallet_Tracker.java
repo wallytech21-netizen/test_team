@@ -946,6 +946,27 @@ public class Proyecto{
             }
         }
     }// fin modelo corto plazo.
+     public static void verificacionmesin(){ //nos sirve para verificar que se haya puesto un mes correcto
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Dame el mes en el que se efectuó el ingreso: ");
+        mes= sc.next();
+        for(int k=0; k<12; k++){
+            if(mes.equalsIgnoreCase(meses[k])){
+                mesdiain[i][0]=k+1;
+                break;
+            }
+        }
+        while(mesdiain[i][0]==0){
+            System.out.print("Dame un mes válido, por favor: ");
+            mes= sc.next();
+            for(int k=0; k<12; k++){
+                if(mes.equalsIgnoreCase(meses[k])){
+                    mesdiain[i][0]=k+1;
+                    break;
+                }
+            }
+        }
+    }
     public static void verificaciondiain(){ //en base al mes, nos sirve para verificar que se haya puesto un día correcto.
         Scanner sc=new Scanner(System.in);
         if(mesdiain[i][0]==1 || mesdiain[i][0]==3 || mesdiain[i][0]==5 || mesdiain[i][0]==7 || mesdiain[i][0]==8 || mesdiain[i][0]==10 || mesdiain[i][0]==12){
@@ -985,6 +1006,16 @@ public class Proyecto{
             }
         }
     }
+     public static void verificaciondiaeg(){ //en base al mes, nos sirve para verificar que se haya puesto un día correcto.
+        Scanner sc=new Scanner(System.in);
+        if(mesdiaeg[j][0]==1 || mesdiaeg[j][0]==3 || mesdiaeg[j][0]==5 || mesdiaeg[j][0]==7 || mesdiaeg[j][0]==8 || mesdiaeg[j][0]==10 || mesdiaeg[j][0]==12){
+            System.out.print("El mes que ingresaste anteriormente solo tiene 31 días, por lo que tienes que escribir un día del 1-31: ");
+            mesdiaeg[j][1]=sc.nextInt();
+            while(mesdiaeg[j][1]<1 || mesdiaeg[j][1]>31){
+                System.out.print("Dame un día válido, considera el mensaje que tienes arriba: ");
+                mesdiaeg[j][1]=sc.nextInt();
+            }
+        } //meses de 31 días.
         else if(mesdiaeg[j][0]==2){
             System.out.print("El mes que ingresaste anteriormente solo tiene 28 días, por lo que tienes que escribir un día del 1-28: ");
             mesdiaeg[j][1]=sc.nextInt();

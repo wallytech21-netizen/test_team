@@ -1435,7 +1435,7 @@ public class Proyecto{
             System.out.print("El mes que ingresaste anteriormente solo tiene 28 días, por lo que tienes que escribir un día del 1-28: ");
             while(!valido){
                 try{
-                    mesdiain[i][0]=sc.nextInt();
+                    mesdiain[i][1]=sc.nextInt();
                     if((mesdiain[i][1]<1 || mesdiain[i][1]>28)){
                         System.out.println("El día no esta dentro de los límites establecidos, considera el mensaje que tienes arriba.");
                     }else{
@@ -1534,7 +1534,7 @@ public class Proyecto{
             while(!valido){
                 try{
                     mesdiaeg[j][1]=sc.nextInt();
-                    if((mesdiaeg[j][1]<1 || mesdiaeg[j][1]>28)){
+                    if((mesdiaeg[j][1]<1 || mesdiaeg[j][1]>30)){
                         System.out.println("El día no esta dentro de los límites establecidos, considera el mensaje que tienes arriba.");
                     }else{
                         valido=true;
